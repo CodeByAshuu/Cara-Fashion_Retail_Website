@@ -45,7 +45,6 @@ p{
 
 button.normal{
     font-size: 14px;
-    font-size: 600;
     padding: 15px 30px;
     color: #000;
     background-color: #fff;
@@ -81,7 +80,7 @@ body{
     padding: 20px 80px;
     background: #e3e6f3;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
-    z-index: 999; /* navbar ka box shadow vapas lane ke liye gayab hogya tha */
+    z-index: 999; /* navbar ka box shadow vapas lane ke liye ,gayab hogya tha */
     position: sticky; /* navbar move kr rha , usse sticky krdiya */
     top: 0;
     left: 0;
@@ -133,9 +132,9 @@ body{
     display:none;
 }
 
-/* Home Page*/
+/* --- HOME --- */
 
-/* --- HERO BANNER --- */
+/* Main banner */
 #hero{
     background-image: url("img/hero4.png");
     height: 90vh;
@@ -169,7 +168,7 @@ body{
     font-size: 15px;
 }
 
-/* --- FEATURES --- */
+/* feature*/
 #feature{
     display: flex;
     align-items: center;
@@ -223,7 +222,7 @@ body{
     background-color: #fff2e5;
 }
 
-/* ---- PRODUCTS ---*/
+/* products */
 #product1 {
     text-align: center;
 }
@@ -298,7 +297,7 @@ body{
     right: 10px;
 }
 
-/* ---- BANNER --- */
+/* banner*/
 #banner{
     display: flex;
     flex-direction: column;
@@ -333,7 +332,7 @@ body{
     color: #fff;
 }
 
-/* --- TEXT BANNER --- */
+/* text banner */
 #sm-banner{
     display: flex;
     justify-content: space-between;
@@ -423,7 +422,7 @@ body{
     padding: 0 80px;
 }
 
-/* --- NEWSLETTER --- */
+/* Newsletter */
 #newsletter{
     display: flex;
     justify-content: space-between;
@@ -475,7 +474,7 @@ body{
     border-bottom-left-radius: 0;
 }
 
-/* --- FOOTER --- */
+/* footer */
 footer{
     display: flex;
     flex-wrap: wrap;
@@ -538,103 +537,6 @@ footer .follow:hover , footer a:hover{
 footer .copyright{
     width: 100%;
     text-align: center;
-}
-
-/* MEDIA QUERY */
-
-@media (max-width:799px){
-    .section-p1 {
-        padding: 40px 4%;
-    }
-
-    #navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 300px;
-        background-color: #e3e6f3;
-        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
-        padding: 80px 0 0 10px;
-        transition: 0.3s;
-    }
-
-    #navbar.active{
-        right: 0px;
-    }
-    #navbar li {
-        margin-bottom: 25px;
-    }
-
-    #mobile{
-        display: none;
-        align-items: center;
-    }
-
-    #mobile{
-        color: #1a1a1a;
-        font-size: 24px;
-        padding-left: 20px;
-    }
-
-    #close{
-        display: initial;
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        color: #222;
-        font-size: 24px;
-    }
-
-    #lg-bag {
-        display: none;
-    }
-
-    #hero {
-        height: 90vh;
-        padding: 0 80px;
-        background-position: top 30% right 30%;
-    }
-
-    #feature {
-        justify-content: center; 
-    }
-
-    #feature .fe-box {
-        margin: 15px 15px;
-    }
-
-    #product1 .pro-container {
-        justify-content: center;
-    }
-
-    #product1 .pro {
-        margin: 15px;
-    }
-
-    #banner {
-        height: 20vh;
-    }
-
-    #sm-banner .banner-box {
-        min-width: 100%;
-        height: 30vh;
-    }
-
-    #banner3 {
-        padding: 0 40px;
-    }
-
-    #banner3 .banner-box {
-        
-        min-width: 30%;
-        width: 20vh;
-        height: 35vh;
-    }
 }
 
 /* SHOP */
@@ -805,4 +707,409 @@ font-size: 26px;
     font-weight: 700;
     color: #c9cbce;
     z-index: -9;
+}
+
+/* ABOUT */
+
+/* main banner */
+#page-header.about-header{
+    background-image: url('img/about/banner.png');
+}
+
+/* who are we */
+#about-head{
+    display: flex;
+    align-items: center;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+
+/* about app */
+#about-app{
+    text-align: center;
+}
+
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* CONTACT */
+
+#page-header.contact-header{
+    background-image: url('img/about/banner.png');
+}
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details{
+    width: 40%;
+}
+
+#contact-details .details .span,
+#form-details form span{
+    font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p{
+    font-size: 14px;
+    margin: 0;
+}
+
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form button{
+    background-color: #088178;
+    color: #fff;
+}
+
+#form-details .people div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#form-details .people div img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#form-details .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#form-details .people div p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* MEDIA QUERY */  
+
+/* to make it responsive */
+
+@media (max-width:799px){
+    .section-p1 {
+        padding: 40px 4%;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: none;
+        align-items: center;
+    }
+
+    #mobile{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #hero {
+        height: 90vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center; 
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    #banner3 {
+        padding: 0 40px;
+    }
+
+    #banner3 .banner-box {
+        
+        min-width: 30%;
+        width: 20vh;
+        height: 35vh;
+    }
+    #newsletter .form {
+        width: 70%;
+    }
+    /* Contact Page */
+    #form-details {
+        padding: 40px;
+    }
+    #form-details form{
+        width: 20px;
+    }
+}
+
+
+@media (max-width: 477px){
+    .section-p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 10px 30px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #hero {
+        background-position: 55%;
+        padding: 0 20px;
+    }
+
+    #feature {
+        justify-content: space-between;
+    }
+
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+
+    #product1 .pro {
+        width: 100%;
+    }
+
+
+
+    #banner {
+        height: 40vh;
+
+    }
+
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box2 {
+        margin-top: 20px;    
+    }
+
+    #banner3 {
+        padding: 0 20px;
+    }
+
+    #banner3 .banner-box {
+        width: 100%;
+    }
+
+    #newsletter {
+        padding: 40px 20px;
+    }
+
+    #newsletter .form {
+        width: 100%;
+    }
+
+    footer .copyright {
+        text-align: start;
+    }
+
+    /*Single product*/
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetails .single-pro-image{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #prodetails .single-pro-details{
+        width: 100%;
+    } 
+
+    /*blog*/
+    #blog{
+        padding: 100px 20px 0 20px;
+    }
+
+    #blog .blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #blog .blog-img{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    /*about*/
+    #about-head{
+        flex-direction: column;
+    }
+
+    #about-head img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-head div{
+        padding-left: 0px;
+    }
+
+    #about-app .video{
+        width: 100%;
+    }
+
+    /*contact*/
+    #contact-details{
+        flex-direction: column;
+    }
+
+    #contact-details .details{
+        width: 100%;
+    }
+
+    #contact-details .map{
+        width: 100%;
+    }
+
+    #form-details{
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+
+    #form-details form{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
 }
