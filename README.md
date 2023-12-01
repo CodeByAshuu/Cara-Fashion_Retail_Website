@@ -3,7 +3,7 @@ Introducing "Cara" - Your Ultimate Fashion Destination!
 Cara is not just your ordinary fashion retail website - it is a responsive and user-friendly platform designed to deliver an exceptional shopping experience. Loaded with a vast collection of trendy clothes, shoes, bags, jewellery, and more, Cara is the go-to destination for fashion enthusiasts and trendsetters alike.
 
 With its sleek and captivating design, Cara comprises five seamlessly integrated pages to cater to all your fashion needs. The Home page welcomes you with a visually stunning layout that instantly captivates the eye and sets the tone for an unforgettable shopping experience.
-
+<img src="img/logo.png"></img>
 Navigate to the Shop page, and you will be amazed at the extensive range of fashionable items at your fingertips. From elegant dresses to stylish footwear and chic accessories, Cara offers a diverse selection that caters to every individual's unique fashion taste.
 
 Delve deeper into the Detailed Product page, where you can explore comprehensive information and captivating images of each item. With a user-friendly interface, you can effortlessly browse through different sizes, colors, and customer reviews, ensuring that you make the perfect choice before making a purchase.
